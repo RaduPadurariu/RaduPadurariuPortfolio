@@ -1,0 +1,191 @@
+.projects {
+    background-image: url("../../../public/imgs/home.jpg");
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    font-family: voyager, verdana;
+    color: #edf6f9;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.projects-header {
+    font-size: 40px;
+    margin-top: 50px;
+    animation: slideIn 1s ease forwards;
+    text-align: center;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(0px) scale(0.2);
+    }
+    100% {
+        transform: translateX(0px) scale(1);
+    }
+}
+.my {
+   
+    color: #4ccaf0d0;
+}
+.projects-container {
+    width: 100%;
+    display:flex;   
+    margin:40px 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.projects-myProjects {
+    border:2px solid #4ccaf083;
+    border-radius: 25px;
+    /* box-shadow: 3px 3px 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    width: 400px;
+    margin:40px 20px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.projects-container--githubLink {
+    display:none;
+}
+
+.projects-myProjects:hover .projects-container--githubLink {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    width: 400px;
+    height:300px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.icons-project {
+    height:70px;
+    margin-top: 100px;
+}
+.projects-image--container {
+    background-color: black;
+    border-radius: 25px;
+}
+
+.projects-image--planetary {
+    width: 250px;
+    height: 250px;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto;
+    border-radius: 50%;
+    background-image: url("../../../public/imgs/planet.jpg");
+    background-size: cover;
+    box-shadow: -25px -15px 60px 0.5px;
+    animation: spin 20s linear infinite;
+    margin-top:35px;
+    margin-bottom: 15px;
+}
+
+@keyframes spin {
+    100% {background-position:100%;}
+}
+
+.projects-image--idealMan {
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+
+.projects-image--gameSimulator {
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.projects-title {
+    font-size: 23px;
+    color: #edf6f9;
+    margin:15px auto;
+    text-align: center;
+}
+
+.project-title--color1 {
+    color:#e76f51;
+}
+
+.project-title--color2 {
+    color:#eb6c31;
+}
+
+.project-title--color3 {
+    color:#4ccaf0d0;
+}
+
+.project-title--color4 {
+    color:#9d4edd;
+}
+
+
+
+
+.projects-description {
+    font-size: 17px;
+    font-family: 'helvetica';
+    background-color: #edf6f9;
+    color: black;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 25px;
+}
+
+@media (max-width:370px) {
+    .projects-header {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+/* Eye animation in progress */
+
+/* .projects-image--proportions {
+    position:relative;
+}
+.eyes {
+    width:6px;
+    height:6px;
+    background-color: #edf6f9;
+    border-radius: 50%;
+    position:absolute;
+    left:192px;
+    top: 67px;
+    animation: blink 1s steps(1, end) infinite;
+} */
+
+/*@keyframes blink {
+    0% {
+      box-shadow: -20px -20px 50px 10px;
+      background-color: #edf6f9;
+    }
+    50% {
+        /* box-shadow: -20px -20px 20px 1px; */
+        /* background-color: lightcoral;
+    }
+    100% {
+        box-shadow: -20px -20px 50px 10px;
+        background-color: #edf6f9;
+    }
+  }// */

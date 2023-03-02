@@ -1,0 +1,133 @@
+.skills {
+    background-image: url("../../../public/imgs/home.jpg");
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    font-family: "voyager";
+    color: #edf6f9;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.skills-header {
+    font-size: 40px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.skills-container {
+    display:flex;   
+    margin-bottom: 100px;
+}
+
+.skills-data {
+    display:flex;
+    flex-direction: column;
+    color: #edf6f9;
+    margin: 50px 20px 0 50px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.skills-data--names {
+    margin-bottom: 15px;
+}
+
+.my {
+    color: #4ccaf0d0;
+}
+
+.skills-bars {
+    width:400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #edf6f9;
+    margin: 50px 0 50px 20px; 
+}
+
+.skills-bar--progress {
+    background-color: rgba(211, 211, 211, 0.212);
+    color: #4ccaf0d0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.skills-bar--html {
+    background-color: #adb5bd;
+    border-radius: 10px;
+    width:90%;
+    height:18px;
+}
+
+.skills-bar--css {
+    background-color: #adb5bd;
+    border-radius: 10px;
+    width:75%;
+    height:18px;
+}
+
+.skills-bar--js {
+    background-color: #adb5bd;
+    border-radius: 10px;
+    width:75%;
+    height:18px;
+}
+
+.skills-bar--react {
+    background-color: #adb5bd;
+    border-radius: 10px;
+    width:50%;
+    height:18px;
+}
+
+.skills-bar--github {
+    background-color: #adb5bd;
+    border-radius: 10px;
+    width:35%;
+    height:18px;
+}
+
+.skills-bar--sass {
+    background-color: #adb5bd;
+    border-radius: 10px;
+    width:25%;
+    height:18px;
+}
+
+.skills-languages {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+
+.icons {
+    margin:0 25px;
+}
+
+@media (max-width:700px) {
+    .skills-container {
+        width:80%;
+    }
+    .skills-data--names:nth-child(3) {
+        font-size: 12px;
+    }
+    .skills-data {
+        margin: 50px 10px 0 10px;
+    }
+    .icons {
+        margin:0 15px;
+    }
+}
+
+@media (max-width:370px) {
+    .skills-header {
+        font-size: 25px;
+    }
+}

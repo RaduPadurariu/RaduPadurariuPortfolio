@@ -1,0 +1,134 @@
+:root {
+    --primaryFont: voyager, verdana, arial;
+}
+
+
+.home {
+    display:flex;
+    align-items: center;
+    /* text-align: center; */
+    background-image: url("../../../public/imgs/home.jpg");
+    flex:1;
+}
+
+.container-img {
+    text-align: right;
+    margin-right:150px;
+    flex:1;
+    animation: slideIn 1s ease forwards;
+}
+
+.container-description {
+    height:40vh;
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    color:#edf6f9;
+    font-family: var(--primaryFont);
+    margin-left:150px;
+    flex:1;
+    align-items: left;
+}
+
+
+.home img {
+    width:40vh;
+    border-radius: 5%;
+    border:2px solid #4ccaf073;
+}
+
+.home img:hover {
+    border:2px solid #4ccaf0d0;
+}
+
+.heading-paragraph {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 25px 0;
+}
+
+.headings {
+    margin:10px 0;
+}
+
+.heading2 {
+    font-size: 60px;
+    font-family:var(--primaryFont);
+    margin:10px 0;  
+}
+
+.heading3 {
+    font-size: 20px;
+    color: #4cc9f0;
+    font-family: var(--primaryFont);
+    margin: 20px 0;
+}
+
+.contact-btn-homepage {
+    color:black;
+    background-color: darkgrey;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--primaryFont);
+    border:2px solid #4ccaf0;
+    padding:10px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.contact-btn-container {
+   margin: 25px 0 50px 0;
+}
+
+.contact-btn-homepage:hover {
+    background-color: lightgrey;
+ }
+
+ @media (max-width:1500px) {
+    .container-img {
+        margin:0 auto;
+        margin-right:80px;
+    }
+    .container-description{
+        margin:0 auto;
+        margin-left:80px;
+        }
+ }
+
+ @media (max-width:1250px) {
+    .home {
+        flex-direction: column;
+    }
+
+    .container-img {
+        margin:0 auto;
+        text-align: center;
+        
+    }
+
+    .home img {
+        width:40vh;
+        margin-top: 100px;
+    
+    }
+    .container-description{
+        margin:0 auto;
+        text-align: center;
+        justify-content: space-around;
+        }
+ }
+
+ @media (max-width:600px) {
+   
+
+    .home img {
+        width:80%;
+        margin-top: 100px;
+    }
+    .heading2 {
+        font-size: 40px;
+        font-family: var(--primaryFont);
+        
+    }
+ }

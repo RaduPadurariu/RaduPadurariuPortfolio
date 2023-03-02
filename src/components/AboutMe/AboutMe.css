@@ -1,0 +1,203 @@
+:root {
+    --primaryFont: voyager, verdana, arial;
+}
+
+.aboutMe {
+    background-image: url("../../../public/imgs/lightblue.jpg");
+    background-size: cover;
+    background-position: center;
+    /* background-color: white; */
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    font-family: var(--primaryFont);
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 17px;
+    position: relative;  
+}
+
+.aboutMe-header {
+    font-size: 40px;
+   margin-top: 100px;
+   text-align: center;
+}
+
+.my1 {
+   color: darkorange;
+}
+
+.aboutMe-container {
+    display:flex;   
+    color:black;
+    font-family: 'helvetica';
+    justify-content: space-around;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.aboutMe-description {
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.aboutMe-description--title {
+    margin:0 0 30px 0;
+    font-family: var(--primaryFont);
+    font-size: 25px;
+}
+
+.aboutMe-description--title-coding{
+    color:darkblue;
+}
+.aboutMe-description--paragraph {
+    width:400px;
+    color:rgb(24, 21, 21);
+    margin-bottom: 50px;
+}
+
+.aboutMe-description--downloadBtn {
+    color:black;
+    background-color: darkgrey;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--primaryFont);
+    border:2px solid black;
+    padding:10px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.aboutMe-description--downloadBtn:hover {
+    background-color: lightgrey;
+ }
+
+
+.aboutMe-carousel {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutMe-carousel--title {
+    margin:25px auto;
+    font-family: var(--primaryFont);
+    font-size: 12px;
+}
+
+.aboutMe-carousel--container {
+    display: flex;
+    justify-content: center;
+    width:800px;
+}
+
+.aboutMe-carousel--pics {
+    width: 500px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMe-carousel--picture {
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 20px;
+}
+
+.aboutMe-carousel--Btn-container{
+    margin:auto 0;
+}
+
+.aboutMe-carousel--Btn{
+    font-size: 18px;
+    font-family: var(--primaryFont);
+    color: black;
+    background-color: transparent;
+    border: none;
+    margin:20px;
+    cursor: pointer;
+}
+
+.aboutMe-carousel--Btn:hover {
+    border-bottom: 1px solid black;
+}
+
+.aboutMe-social {
+    display: flex;
+    margin: 30px 0;
+    justify-content: center;
+    align-items: center;
+  }
+.icons-social {
+    margin:-1px;
+    border-radius: 50%;
+}
+
+.icons-container {
+    background:white;
+    width: 48px;
+    height:48px;
+    border-radius: 50%;
+    margin:0 20px;
+}
+
+@media (max-width:1450px) {
+    .aboutMe-container {
+        flex-direction: column;
+    }
+
+    .aboutMe-description {
+        width:100%;
+        margin:100px 0 60px 0;
+        align-items: center;
+    }
+    
+    .aboutMe-description--paragraph {
+        text-align: left;
+    }
+
+    .aboutMe-carousel {
+        align-items: center;
+        width: 100%;
+    }
+
+    .aboutMe-carousel--title {
+        margin:20px auto;
+    }
+    
+    .aboutMe-carousel--pics {
+        width:100%;
+        height:100%;
+    }
+
+    .aboutMe-carousel--container {
+    
+        width:100%;
+    }
+}
+
+@media (max-width:720px) {
+    .aboutMe-description--title {
+        font-size: 15px;
+    }
+    .aboutMe-carousel--picture {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 20px;
+    }
+
+    .aboutMe-description--paragraph {
+        width:300px;
+    }
+    .aboutMe-description--downloadBtn {
+        font-size: 12px;
+    }
+    .aboutMe-carousel--Btn {
+        font-size: 10px;
+        margin: 20px;
+    }
+}
