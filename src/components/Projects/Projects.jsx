@@ -10,7 +10,7 @@ export const Projects = () => {
             </div>
             <div className="projects-container">
 
-                <a href="../internalProjects/miniapps/index.html" target="_blank" rel="noopener noreferrer" className="projects-myProjects">
+                <a href="/internalProjects/miniapps/index.html" target="_blank" className="projects-myProjects">
                     <div className="projects-image--container">
                         <div className="projects-image--planetary">
 
